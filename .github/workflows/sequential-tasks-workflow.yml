@@ -10,6 +10,7 @@ jobs:
         
   tests:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Testing Step
         run: echo "Testing step started"
