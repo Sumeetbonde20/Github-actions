@@ -8,4 +8,4 @@ jobs:
       - name: printing hello step
         uses: actions/checkout@v4
       - name: printing hello from index
-        run: cat index.js
+        run: cat index.html
