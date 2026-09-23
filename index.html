@@ -1,1 +1,134 @@
-<h2>Hii from index file</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background: linear-gradient(135deg,#4f46e5,#7c3aed,#ec4899);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            border-radius:20px;
+            padding:40px;
+            text-align:center;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        p{
+            font-size:1.1rem;
+            opacity:0.9;
+            margin-bottom:30px;
+        }
+
+        .buttons{
+            margin-bottom:40px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 25px;
+            margin:10px;
+            border:none;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+            cursor:pointer;
+        }
+
+        .btn-primary{
+            background:white;
+            color:#4f46e5;
+        }
+
+        .btn-secondary{
+            background:transparent;
+            color:white;
+            border:2px solid white;
+        }
+
+        .btn:hover{
+            transform:translateY(-5px);
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.15);
+            padding:25px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .icon{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Website 🚀</h1>
+        <p>Modern, responsive and beautifully designed static website.</p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Fast</h3>
+                <p>Optimized for speed and performance.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Beautiful</h3>
+                <p>Modern UI with glassmorphism effect.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Responsive</h3>
+                <p>Looks great on mobile and desktop.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
