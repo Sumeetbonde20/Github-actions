@@ -1,0 +1,11 @@
+name: testing-file
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: printing hello step
+        uses: actions/checkout@v4
+      - name: printing hello from index
+        run: cat index.js
