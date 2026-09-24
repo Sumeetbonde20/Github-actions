@@ -14,3 +14,11 @@ jobs:
           aws-region: ap-south-1
       - name: Sync to S3 bucket
         run: aws s3 sync ./ s3://static-web-deploy70204/ --exclude="*" --include="index.html"
+
+# Steps :
+# 1. Chechout the code to ubuntu
+# 2. Configure AWS cred (within the repos secrets and variables in Github)
+# 3. Sync with S3
+# 4. Sync = push to S3
+# 5. Check the S3 bucket for the index.html file
+# 6. Action is triggered automatically as we have push trigger in our workflow file
