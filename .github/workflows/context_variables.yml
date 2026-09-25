@@ -1,6 +1,9 @@
 name: context-variables
 
 on: [push]
+env:
+  APP_NAME: MyApp
+  ENVIRONMENT: production
 
 jobs:
   build:
