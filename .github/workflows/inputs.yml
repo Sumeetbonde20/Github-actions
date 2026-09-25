@@ -1,0 +1,20 @@
+name: input-example
+on:
+  workflow_dispatch:
+    inputs:
+      environment: #d2rt
+        description: "This is setting up of ENV"
+        required: true
+        default: dev
+        type: choice
+        options:
+          - production
+          - testing
+          - development
+
+jobs:
+  input-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simply printing inputs
+        run: echo "The choice is ${{ inputs.environment }}"
