@@ -1,10 +1,14 @@
 name: context-variables
+
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: "Printing github context variable"
-        run: echo "${{toJson(github)}}"
-      - name: "Printing github context variable"
-        run: echo "${{toJson(env)}}"
+      - name: Printing github context variable
+        run: echo '${{ toJSON(github) }}'
+
+      - name: Printing env context variable
+        run: echo '${{ toJSON(env) }}'
