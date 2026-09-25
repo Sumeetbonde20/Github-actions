@@ -15,3 +15,6 @@ jobs:
 
       - name: Printing env context variable
         run: echo '${{ toJSON(env) }}'
+
+      - name: Printing single env context variable
+        run: echo '$APP_NAME'
