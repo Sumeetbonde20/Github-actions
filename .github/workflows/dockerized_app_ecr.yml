@@ -1,6 +1,5 @@
 name: dockerized-app
 on: [push]
-
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
